@@ -1,0 +1,10 @@
+project: spectrophoto
+target: spectrophoto
+
+cmds:
+  - cmd: /mayhem/fuzz_spectrophoto
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/spectrophoto/testsuite
